@@ -39,11 +39,6 @@ body {
         margin: 0 auto;
         padding: 0; 
     }
-    .container {
-        max-width: 1400px;
-        margin: 0 auto;
-        padding: 0 40px;
-    }
     
     .Wainhaito {
         color: #00754a;
@@ -51,6 +46,14 @@ body {
     
     .text-right {
         text-align: right;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 0 40px;
 }
 
 
