@@ -1,0 +1,121 @@
+
+* {
+    /* outline: 1px solid red; */
+    scroll-behavior: smooth;
+}
+.Obscura{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    margin: 0;
+    font-family: Arial;
+    color: white;
+    overflow-x: hidden;
+    min-height: 200vh;
+    background-color: #020617;   
+    
+}
+
+.parallax {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+    
+    .finch {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0; 
+    }
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+    
+    .Wainhaito {
+        color: #00754a;
+    }
+    
+    .text-right {
+        text-align: right;
+}
+
+
+
+
+
+/* ---------------------------------------------------ADAPTIVE--------------------------------------------------- */ 
+
+/* @media (max-width: 1200px) {
+
+    .Obscura {
+        padding: 0 60px;
+    }
+
+    .container {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .Obscura {
+        padding: 0 40px;
+    }
+
+    .container {
+        padding: 0 25px;
+    }
+
+    .text-right {
+        text-align: left;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .Obscura {
+        padding: 0 20px;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .parallax {
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .Obscura {
+        padding: 0 15px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+} */
