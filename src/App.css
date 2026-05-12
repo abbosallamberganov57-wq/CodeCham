@@ -1,21 +1,10 @@
-
 * {
-    /* outline: 1px solid red; */
     scroll-behavior: smooth;
-}
-.Obscura{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 100px;
-}
-
-* {
+    transition: 0.5s;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-
 
 body {
     margin: 0;
@@ -23,8 +12,8 @@ body {
     color: white;
     overflow-x: hidden;
     min-height: 200vh;
-    background-color: #020617;   
-    
+    background-color: #020617;
+
 }
 
 .parallax {
@@ -33,34 +22,38 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
-    
-    .finch {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0; 
-    }
-    
-    .Wainhaito {
-        color: #00754a;
-    }
-    
-    .text-right {
-        text-align: right;
-}
 
+/* .Obscura{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 100px;
+} */
 
-.container {
-    width: 100%;
-    max-width: 1700px;
+/* .finch {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0; 
+} */
+/* .container {
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 40px;
-}
+} */
+
+/* .Wainhaito {
+    color: #00754a;
+} */
+
+/* .text-right {
+    text-align: right;
+    border: 5px solid red;
+} */
 
 
 
 
 
-/* ---------------------------------------------------ADAPTIVE--------------------------------------------------- */ 
+/* ---------------------------------------------------ADAPTIVE--------------------------------------------------- */
 
 /* @media (max-width: 1200px) {
 

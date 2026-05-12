@@ -16,12 +16,12 @@ function App() {
             }}
         >
             <Hero />
-            <Features />
-            <AboutSec />
-            <ProductsSec />
-            <EventsSec />
-            <Contacts />
-            <Footer />
+            {/* <Features /> */}
+            {/* <AboutSec /> */}
+            {/* <ProductsSec /> */}
+            {/* <EventsSec /> */}
+            {/* <Contacts /> */}
+            {/* <Footer /> */}
         </div>
     )
 
