@@ -1,0 +1,94 @@
+.contacts-hero {
+    padding: 60px 0 100px;
+    text-align: center;
+}
+
+.contacts-hero h1 {
+    font-size: 72px;
+    margin-bottom: 20px;
+}
+
+.contacts-hero p {
+    font-size: 20px;
+    color: #999999;
+}
+
+.contacts-info {
+    padding: 100px 0;
+}
+
+.contacts-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+
+.contact-card {
+    padding: 40px;
+    border-radius: 30px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    border-color: #00754a;
+    box-shadow: 0 0 40px rgba(0,117,74,0.3);
+}
+
+.contact-card h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-card p {
+    color: #cccccc;
+    line-height: 1.8;
+}
+
+.contacts-form {
+    padding: 100px 0;
+}
+
+.contacts-form form {
+    max-width: 700px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contacts-form input,
+.contacts-form textarea {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.05);
+    color: white;
+    outline: none;
+    font-size: 16px;
+}
+
+.contacts-form textarea {
+    min-height: 180px;
+    resize: none;
+}
+
+.contacts-form button {
+    padding: 18px;
+    border: none;
+    border-radius: 50px;
+    background: #00754a;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contacts-form button:hover {
+    background: #009d63;
+}

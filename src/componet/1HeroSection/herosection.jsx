@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Style from "./herosection.module.css";
 import img1 from "../../image/CTL.png";
 import img2 from "../../image/BRcup.png";
@@ -33,7 +34,7 @@ function Hero() {
                                     <div className={Style[`stat-label`]}>Лайков и<br />Подписчиков</div>
                                 </div>
                                 <div className={Style[`stat-item`]}>
-                                    <div className={Style[`stat-number`]}>28<span className={Style[`text-green`]}>+</span></div>
+                                    <div className={Style[`stat-number`]}>56<span className={Style[`text-green`]}>+</span></div>
                                     <div className={Style[`stat-label`]}>Пять звезд<br />Отзывов</div>
                                 </div>
                             </div>

@@ -22,16 +22,17 @@ body {
     font-family: Arial;
     color: white;
     overflow-x: hidden;
-    min-height: 200vh;
+    /* min-height: 200vh; */
     background-color: #020617;   
     
 }
 
 .parallax {
-    min-height: 100vh;
+    min-height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    /* border: 2px solid red; */
 }
     
     .finch {
@@ -49,11 +50,16 @@ body {
 }
 
 
-.container {
+/* .container {
     width: 100%;
     max-width: 1700px;
     margin: 0 auto;
     padding: 0 40px;
+} */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 

@@ -20,7 +20,7 @@
 }
 
 .we-have-badge {
-    position: absolute;
+    /* position: absolute;
     top: 20px;
     left: 20px;
     background-color: #00754a;
@@ -29,7 +29,7 @@
     border-radius: 30px;
     font-size: 14px;
     font-weight: 600;
-    z-index: 2;
+    z-index: 2; */
 }
 
 .delicious-image {
@@ -59,14 +59,14 @@
 }
 
 .cooking-badge {
-    display: inline-block;
+    /* display: inline-block;
     background-color: #00754a;
     color: #ffffff;
     padding: 8px 20px;
     border-radius: 20px;
     font-size: 14px;
     font-weight: 600;
-    margin-left: 10px;
+    margin-left: 10px; */
 }
 
 

@@ -29,7 +29,6 @@ function Contacts() {
                         </div>
                         <div className={Style["contacts-right"]}>
                             <div className={Style["contact-image-wrapper"]}>
-                                <div className={Style["we-have-badge"]}>У нас есть</div>
                                 <img
                                     src={img15}
                                     alt="Barista"

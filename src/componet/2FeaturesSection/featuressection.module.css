@@ -7,6 +7,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .feature-card {
@@ -39,7 +41,7 @@
 
 .feature-title {
     font-size: 28px;
-    font-weight: bold;
+    /* font-weight: bold; */
     color: #0a0a0a;
     margin-bottom: 15px;
 }
