@@ -92,3 +92,14 @@
 .contacts-form button:hover {
     background: #009d63;
 }
+
+
+
+@media (max-width: 550px) {
+    .contacts-grid {
+        grid-template-columns: 1fr;
+    }
+    .contacts-hero  h1 {
+        font-size: 48px;
+    }
+}
