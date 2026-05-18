@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import Style from "./navbar.module.css"
 
 function Navbar() {
@@ -7,26 +7,39 @@ function Navbar() {
             <div className="container">
                 <div className={Style.container}>
                     <Link
+                        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                         to="/"
                         className={Style.logo}>
                         CaffeineCode
                     </Link>
                     <nav className={Style.nav}>
-                        <Link
+                        <NavLink
+                            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                             to="/about"
-                            className={Style.link}>
-                            О нас
-                        </Link>
-                        <Link
+                            className={({ isActive }) =>
+                                isActive
+                                    ? `${Style.link} ${Style.active}`
+                                    : Style.link}>
+                            About
+                        </NavLink>
+                        <NavLink
+                            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                             to="/reviews"
-                            className={Style.link}>
-                            Отзывы
-                        </Link>
-                        <Link
+                            className={({ isActive }) =>
+                                isActive
+                                    ? `${Style.link} ${Style.active}`
+                                    : Style.link}>
+                            Reviews
+                        </NavLink>
+                        <NavLink
+                            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
                             to="/contacts"
-                            className={Style.link}>
-                            Контакты
-                        </Link>
+                            className={({ isActive }) =>
+                                isActive
+                                    ? `${Style.link} ${Style.active}`
+                                    : Style.link}>
+                            Contacts
+                        </NavLink>
                     </nav>
                 </div>
             </div>
