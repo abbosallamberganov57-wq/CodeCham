@@ -3,7 +3,7 @@ import img7 from "../../image/esp.jpg";
 import img8 from "../../image/lat.jpg";
 import img9 from "../../image/cap.jpg";
 
-function ProductsSec() {
+function ProductsSec({ addToCart }) {
     return (
         <section className={Style.gara} id="select">
             <div className="container">
@@ -32,7 +32,17 @@ function ProductsSec() {
                                     <span className={Style[`price`]}>7.45$</span>
                                     <span className={Style[`volume`]}>340 ml</span>
                                 </div>
-                                <a href="#buy" className={`${Style.btn} ${Style['btn-primary']} ${Style['btn-small']}`}>Купить</a>
+                                <button
+                                    className={`${Style.btn} ${Style['btn-primary']} ${Style['btn-small']}`}
+                                    onClick={() =>
+                                        addToCart({
+                                            name: "Espresso",
+                                            price: 7.45
+                                        })
+                                    }
+                                >
+                                    Купить
+                                </button>
                             </div>
                         </div>
                         <div className={Style[`product-card`]}>
@@ -46,7 +56,17 @@ function ProductsSec() {
                                     <span className={Style[`price`]}>7.45$</span>
                                     <span className={Style[`volume`]}>340 ml</span>
                                 </div>
-                                <a href="#buy" className={`${Style.btn} ${Style['btn-primary']} ${Style['btn-small']}`}>Купить</a>
+                                <button
+                                    className={`${Style.btn} ${Style['btn-primary']} ${Style['btn-small']}`}
+                                    onClick={() =>
+                                        addToCart({
+                                            name: "Latte",
+                                            price: 7.45
+                                        })
+                                    }
+                                >
+                                    Купить
+                                </button>
                             </div>
                         </div>
                         <div className={Style[`product-card`]}>
@@ -60,7 +80,17 @@ function ProductsSec() {
                                     <span className={Style[`price`]}>7.45$</span>
                                     <span className={Style[`volume`]}>340 ml</span>
                                 </div>
-                                <a href="#buy" className={`${Style.btn} ${Style['btn-primary']} ${Style['btn-small']}`}>Купить</a>
+                                <button
+                                    className={`${Style.btn} ${Style['btn-primary']} ${Style['btn-small']}`}
+                                    onClick={() =>
+                                        addToCart({
+                                            name: "Cappuccino",
+                                            price: 7.45
+                                        })
+                                    }
+                                >
+                                    Купить
+                                </button>
                             </div>
                         </div>
                     </div>

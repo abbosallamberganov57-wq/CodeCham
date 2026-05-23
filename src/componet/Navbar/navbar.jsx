@@ -40,6 +40,16 @@ function Navbar() {
                                     : Style.link}>
                             Contacts
                         </NavLink>
+                        <NavLink
+                            to="/cart"
+                            className={({ isActive }) =>
+                                isActive
+                                    ? `${Style.link} ${Style.active}`
+                                    : Style.link
+                            }
+                        >
+                            Cart
+                        </NavLink>
                     </nav>
                 </div>
             </div>

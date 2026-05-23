@@ -8,7 +8,7 @@ import EventsSec from "../componet/5EventsSection/eventssection.jsx"
 import ContactsSec from "../componet/6ContactsSection/contactssection.jsx"
 import Footer from "../componet/7FooterSection/footersection.jsx"
 
-function Home() {
+function Home({ addToCart }) {
     return (
         <div 
         // className={Style.parallax}
@@ -19,7 +19,7 @@ function Home() {
             <Hero />
             <Features />
             <AboutSec />
-            <ProductsSec />
+            <ProductsSec addToCart={addToCart} />
             <EventsSec />
             <ContactsSec />
             <Footer />

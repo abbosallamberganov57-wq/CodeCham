@@ -1,25 +1,39 @@
 import "./App.css"
 import bg from "./image/bg.jpg"
+
+import { useState } from "react"
 import { Routes, Route } from "react-router-dom"
+
 import Home from "./pages/Home.jsx"
 import About from "./pages/About.jsx"
 import Reviews from "./pages/Reviews.jsx"
 import Contacts from "./pages/Contacts.jsx"
+import Cart from "./pages/Cart.jsx"
+
 import Navbar from "./componet/Navbar/navbar.jsx"
 
 function App() {
+    const [cart, setCart] = useState([])
+    const addToCart = (product) => {
+        setCart([...cart, product])
+    }
+    const removeFromCart = (indexToRemove) => {
+        setCart(
+            cart.filter((_, index) => index !== indexToRemove)
+        )
+    }
     return (
         <div
             className="parallax"
             style={{
-                backgroundImage: ` url(${bg})`
+                backgroundImage: `url(${bg})`
             }}
         >
             <Navbar />
             <Routes>
                 <Route
                     path="/"
-                    element={<Home />}
+                    element={<Home addToCart={addToCart} />}
                 />
                 <Route
                     path="/about"
@@ -32,6 +46,15 @@ function App() {
                 <Route
                     path="/contacts"
                     element={<Contacts />}
+                />
+                <Route
+                    path="/cart"
+                    element={
+                        <Cart
+                            cart={cart}
+                            removeFromCart={removeFromCart}
+                        />
+                    }
                 />
             </Routes>
         </div>
