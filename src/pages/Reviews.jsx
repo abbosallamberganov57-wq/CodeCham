@@ -1,4 +1,5 @@
 import Style from './reviews.module.css'
+import MiniFooter from "../componet/MiniFooter/MiniFooter.jsx"
 
 function Reviews() {
     return (
@@ -52,6 +53,10 @@ function Reviews() {
                     </div>
                 </section>
             </div>
+            <MiniFooter
+                title="Более 10 000 довольных гостей"
+                text="Каждый отзыв вдохновляет нас делать Caffeine Code ещё лучше и создавать идеальную кофейную атмосферу."
+            />
         </div>
     )
 }

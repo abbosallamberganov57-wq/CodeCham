@@ -1,4 +1,5 @@
 import Style from "./about.module.css"
+import MiniFooter from "../componet/MiniFooter/MiniFooter.jsx"
 import img16 from "../image/JJJ.jpg";
 
 function About() {
@@ -29,7 +30,7 @@ function About() {
                                     работать и наслаждаться напитками.
                                 </p>
                             </div>
-                            <div className={Style['about-history-image']} style = {{backgroundImage: `url(${img16})` , backgroundSize: "cover", backgroundPosition: "bottom"}}>
+                            <div className={Style['about-history-image']} style={{ backgroundImage: `url(${img16})`, backgroundSize: "cover", backgroundPosition: "bottom" }}>
                                 {/* <img src={img16} alt="Coffeine Code" /> */}
                             </div>
                         </div>
@@ -86,6 +87,10 @@ function About() {
                     </div>
                 </section>
             </div>
+            <MiniFooter
+                title="Наша история кофе продолжается каждый день ☕"
+                text="Мы создаём не просто кофе, а особую атмосферу, где каждый гость может насладиться уютом, вкусом и вдохновением."
+            />
         </div>
     )
 }

@@ -65,6 +65,12 @@
     background-color: #009d63;
 }
 
+.total {
+    margin-top: 40px;
+    font-size: 32px;
+    color: #00754a;
+}
+
 
 @media (max-width: 768px) {
 

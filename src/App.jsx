@@ -29,7 +29,7 @@ function App() {
                 backgroundImage: `url(${bg})`
             }}
         >
-            <Navbar />
+            <Navbar cartCount={cart.length} />
             <Routes>
                 <Route
                     path="/"

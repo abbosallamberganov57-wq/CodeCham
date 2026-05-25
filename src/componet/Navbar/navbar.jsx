@@ -1,7 +1,7 @@
 import { Link, NavLink } from "react-router-dom"
 import Style from "./navbar.module.css"
 
-function Navbar() {
+function Navbar({ cartCount }) {
     return (
         <header className={Style.header}>
             <div className="container">
@@ -20,7 +20,7 @@ function Navbar() {
                                 isActive
                                     ? `${Style.link} ${Style.active}`
                                     : Style.link}>
-                            About
+                            О компании
                         </NavLink>
                         <NavLink
                             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -29,7 +29,7 @@ function Navbar() {
                                 isActive
                                     ? `${Style.link} ${Style.active}`
                                     : Style.link}>
-                            Reviews
+                            Отзывы
                         </NavLink>
                         <NavLink
                             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -38,7 +38,7 @@ function Navbar() {
                                 isActive
                                     ? `${Style.link} ${Style.active}`
                                     : Style.link}>
-                            Contacts
+                            Контакты
                         </NavLink>
                         <NavLink
                             to="/cart"
@@ -48,7 +48,7 @@ function Navbar() {
                                     : Style.link
                             }
                         >
-                            Cart
+                            Корзина ({cartCount})
                         </NavLink>
                     </nav>
                 </div>

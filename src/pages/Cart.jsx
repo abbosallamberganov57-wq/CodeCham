@@ -1,6 +1,10 @@
 import Style from "./Cart.module.css"
 
 function Cart({ cart, removeFromCart }) {
+    const totalPrice = cart.reduce(
+        (total, item) => total + item.price,
+        0
+    )
     return (
         <div className={Style.cart}>
             <div className="container">
@@ -29,7 +33,11 @@ function Cart({ cart, removeFromCart }) {
                     </div>
                 )}
             </div>
+            <h2 className={Style.total}>
+                Итого: {totalPrice.toFixed(2)}$
+            </h2>
         </div>
+
     )
 }
 

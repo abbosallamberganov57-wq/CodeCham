@@ -1,4 +1,5 @@
 import Style from './contacts.module.css'
+import MiniFooter from "../componet/MiniFooter/MiniFooter.jsx"
 
 function Contacts() {
     return (
@@ -55,6 +56,10 @@ function Contacts() {
                     </div>
                 </section>
             </div>
+            <MiniFooter
+                title="Мы всегда рады видеть вас ☕"
+                text="Заходите в Caffeine Code в любое время и наслаждайтесь премиальным кофе, уютной атмосферой и незабываемым вкусом."
+            />
         </div>
     )
 }
